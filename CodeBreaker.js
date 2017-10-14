@@ -21,7 +21,7 @@ class CodeBreaker {
 		if (exp.test(number)) {
 			if(number===this.randNumber) {
 				result = 'xxxx'
-			} else { 
+			} else {
 				for (var i = 0; i < 4; i++) {
 					if (number.charAt(i) === this.randNumber.charAt(i)) {
 						result = 'x' + result
@@ -35,6 +35,7 @@ class CodeBreaker {
 		}
 		return null
 	}
+
 }
 
 module.exports = CodeBreaker

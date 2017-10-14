@@ -2,7 +2,10 @@ var assert = require('assert');
 var expect = require('expect.js');
 var CodeBreaker = require('../CodeBreaker');
 var code = new CodeBreaker();
-code.setRandNumber('5876');
+
+beforeEach(function(){
+	code.setRandNumber('5876');
+})
 
 describe('CodeBreaker', function() {
 	describe('#tryCode()', function() {
