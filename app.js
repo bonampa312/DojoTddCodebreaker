@@ -15,8 +15,4 @@ app.get('/guess/:secret', function (req, res) {
   res.send({result: code.tryCode(number)})
 })
 
-app.listen(app.get('port'), function(){
-  console.log("App running");
-})
-
 module.exports = app;
